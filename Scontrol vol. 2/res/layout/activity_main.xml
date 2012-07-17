@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/scontroll2" >
+    
+    <!-- Steering Seekbar -->
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:orientation="horizontal"
+        android:progress="0"
+        android:layout_x="50px"
+      	android:layout_y="500px"/>
+    <TextView
+        android:id="@+id/volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#aa1111"
+        android:layout_x="140px"
+      	android:layout_y="470px"/>    
+    
+    
+<!--    <android.widget.VerticalSeekBar_Reverse
+        android:id="@+id/seekbar_reverse"
+        android:layout_wid
+        th="wrap_content"
+        android:layout_height="100dip"/>
+    <TextView
+        android:id="@+id/reverse_sb_progresstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#aa1111"/> -->
+    
+	<!-- Driving, Braking Seekbar -->
+    <TextView
+        android:id="@+id/vertical_sb_progresstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" 
+        android:text="100"
+        android:textColor="#aa1111"
+        android:layout_x="1010px"
+      	android:layout_y="510px"/>
+    <android.widget.VerticalSeekBar
+        android:id="@+id/vertical_Seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="100dip"
+        android:max="200"        
+        android:progress="100"        
+        android:layout_x="1080px"
+      	android:layout_y="440px"                />
+   
+   <!--Coolant Seekbar  --> 
+   <TextView
+        android:id="@+id/volume_coolant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coolant : 50"
+        android:textColor="#aa1111"
+        android:layout_x="10px"
+      	android:layout_y="50px"/>
+   <SeekBar
+        android:id="@+id/seekbar_coolant"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_x="100dp"
+        android:layout_y="20dp"
+        android:max="100"
+        android:progress="50" />
+    
+   <!--Battery Seekbar  --> 
+   <TextView
+        android:id="@+id/volume_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Battery  : 50"
+        android:textColor="#aa1111"
+        android:layout_x="10px"
+      	android:layout_y="130px"/>
+    <SeekBar
+        android:id="@+id/seekbar_battery"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50" 
+        android:layout_x="200px"
+      	android:layout_y="120px"        />
+    
+     
+   <!--Fuel Seekbar  -->     
+   <TextView
+        android:id="@+id/volume_fuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F u e l　: 50"
+        android:textColor="#aa1111"
+        android:layout_x="10px"
+      	android:layout_y="210px"/>
+    <SeekBar
+        android:id="@+id/seekbar_fuel"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50" 
+        android:layout_x="200px"
+      	android:layout_y="200px"        />
+
+
+    
+    
+      <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_x="805px"
+      	android:layout_y="390px" >
+
+        <Button
+            android:id="@+id/emergency"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_below="@+id/s2linear"
+            android:layout_margin="5px"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="46dp"
+            android:layout_toRightOf="@+id/s2linear"
+            android:background="#50c8FF"
+            android:height="30dp"
+            android:text="Emergency"
+            android:textColor="#000000"
+            android:textSize="12px"
+            android:width="70px"/>
+
+        <Button
+            android:id="@+id/parking"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_margin="5px"
+            android:background="#0064ff"
+            android:text="Parking"
+            android:textColor="#000000"
+            android:textSize="15px"
+            android:width="70px" />
+
+        <Button
+            android:id="@+id/monned"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_margin="5px"
+            android:background="#50c8FF"
+            android:text="Monned"
+            android:textColor="#000000"
+            android:textSize="15px"
+            android:width="70px" />
+
+        <Button
+            android:id="@+id/unmonned"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_margin="5px"
+            android:background="#50c8FF"
+            android:text="Unmonned"
+            android:textColor="#000000"
+            android:textSize="12px"
+            android:width="70px" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/slinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_x="360px"
+      	android:layout_y="390px" >
+
+        <Button
+            android:id="@+id/neutral"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_margin="5px"
+            android:background="#288C28"
+            android:height="30dp"
+            android:text="Neutral"
+            android:textColor="#000000"
+            android:textSize="15px"
+            android:width="70px" />
+
+        <Button
+            android:id="@+id/reverse"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_margin="5px"
+            android:background="#66CDAA"
+            android:text="Reverse"
+            android:textColor="#000000"
+            android:textSize="15px"
+            android:width="70px" />
+
+        <Button
+            android:id="@+id/driving"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_margin="5px"
+            android:background="#66CDAA"
+            android:text="Driving"
+            android:textColor="#000000"
+            android:textSize="15px"
+            android:width="70px" />
+
+        <Button
+            android:id="@+id/pivot"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_margin="5px"
+            android:background="#66CDAA"
+            android:text="Pivot"
+            android:textColor="#000000"
+            android:textSize="15px"
+            android:width="70px" />
+    </LinearLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/statelay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_x="820px"
+      	android:layout_y="0px" >
+
+        <TextView
+            android:id="@+id/l1_wheel"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="1000"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/l2_wheel"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/l1_wheel"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="2000"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/l3_wheel"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/l2_wheel"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="3000"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/vcu"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/l1_wheel"
+            android:layout_toRightOf="@+id/l1_wheel"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="VCU:Normal"
+            android:textSize="25px" />
+
+        <TextView
+            android:id="@+id/pcu"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/vcu"
+            android:layout_below="@+id/vcu"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="PCU:Normal"
+            android:textSize="25px" />
+
+        <TextView
+            android:id="@+id/mcu"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/pcu"
+            android:layout_below="@+id/pcu"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="MCU:Normal"
+            android:textSize="25px" />
+
+        <TextView
+            android:id="@+id/tcu"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/mcu"
+            android:layout_below="@+id/mcu"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="TCU:Normal"
+            android:textSize="25px" />
+
+        <TextView
+            android:id="@+id/fcu"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/tcu"
+            android:layout_below="@+id/tcu"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="FCU:Normal"
+            android:textSize="25px" />
+
+        <TextView
+            android:id="@+id/r1_wheel"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/l1_wheel"
+            android:layout_gravity="center_horizontal"
+            android:layout_toRightOf="@+id/vcu"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="1000"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/r2_wheel"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/r1_wheel"
+            android:layout_toRightOf="@+id/mcu"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="2000"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/r3_wheel"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/r2_wheel"
+            android:layout_toRightOf="@+id/fcu"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="3000"
+            android:textSize="30px" />
+    </RelativeLayout>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="km/h"
+        android:layout_x="320dp" 
+        android:layout_y="100dp"
+        android:textSize="28dp"
+        android:textColor = "#ffffff" />
+    
+    <TextView
+        android:id="@+id/speedtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize = "28dp"
+        android:textColor = "#ffffff"
+        android:layout_x="270dp" 
+        android:layout_y="100dp"
+         />
+    
+</AbsoluteLayout>
+<!-- 		android:progressDrawable="@drawable/thumb"
+        android:thumb="@drawable/ic_launcher" 
+        android:padding="10dip" -->       
